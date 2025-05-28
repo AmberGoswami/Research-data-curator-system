@@ -7,7 +7,10 @@ A prototype pipeline that filters and processes biomedical research articles usi
 
 
 ## Agentic Architecture
-![alt text](langgraph_pipeline.png)
+
+<p align="center">
+  <img src="langgraph_pipeline.png" alt="LangGraph Pipeline" />
+</p>
 
 ## Solution Overview
 

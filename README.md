@@ -1,4 +1,4 @@
-# Elucidata GenAI Biomedical Insight Extractor
+# GenAI Biomedical Insight Extractor
 
 ## Project Overview
 A prototype pipeline that filters and processes biomedical research articles using a GenAI-powered assistant. The system extracts structured insights such as diseases, genes, pathways, experimental methods, and key findings from unstructured `.md` files.

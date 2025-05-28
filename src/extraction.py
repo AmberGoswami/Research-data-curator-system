@@ -27,12 +27,12 @@ class Extraction:
                 try:
                     result = Chains().extraction_chain().invoke({"article": text})
                     insights[article_id] = result.dict()
+                    print(f"{processed_count} article processed")
                     processed_count += 1
+                    # Pause after every 14 requests to avoid hitting Gemini free-tier rate limits
                     if processed_count % 14 == 0:
-                        print("Pausing for 80 seconds...")
-                        time.sleep(80)
-                    # if processed_count >= 30:
-                    #     break 
+                        print("Pausing for 120 seconds...")
+                        time.sleep(120)  
                 except Exception as e:
                     print(f"Error processing {article_id}: {e}")
 

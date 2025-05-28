@@ -1,6 +1,7 @@
-from typing import TypedDict
-
+from typing import Dict, List, Optional, Union, TypedDict
 
 class State(TypedDict):
-    filtered_ids: list[str]
-    insights: dict
+    input_dir: str
+    output_file: str
+    filtered_article_file: str
+    filtered_ids: Optional[List[str]]
